@@ -1,0 +1,242 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/image/sky2.jfif);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+.aeroplane {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    animation: aeroplane 5s linear infinite;
+    margin-top: -160px;
+}
+@keyframes aeroplane {
+    from {
+        transform: translateX(1100px);
+    }
+    to {
+        transform: translateX(-1200px);
+    }
+}
+.highway {
+    height: 600px;
+    width: 500%;
+    display: block;
+    background-image: url(image/road.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    margin-top: 50px;
+    bottom: 0;
+    top: 500px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: highway 5s linear infinite;
+}
+.highway {
+    height: 600px;
+    width: 500%;
+    display: block;
+    background-image: url(image/road.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    margin-top: 50px;
+    bottom: 0;
+    top: 500px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: highway 5s linear infinite;
+}
+
+@keyframes highway {
+    100% {
+        transform: translate(-3400px);
+    }
+}
+
+.highway {
+    height: 600px;
+    width: 500%;
+    display: block;
+    background-image: url(image/road.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    margin-top: 85px;
+    bottom: 0;
+    top: 500px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: highway 5s linear infinite;
+}
+
+@keyframes highway {
+    100% {
+        transform: translate(-3400px);
+    }
+}
+.city {
+    height: 400px;
+    width: 500%;
+    background-image: url(image/town.jpg);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    margin-bottom: -170px;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+@keyframes city {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+.car {
+    width: 400px;
+    left: 50%;
+    bottom: 40px;
+    position: absolute;
+    /* margin-top: -350px; */
+    margin-bottom: -50px;
+    /* transform: translateX(-50%); */
+    z-index: 4;
+    /* background-position: 0 0; */
+}
+.car img {
+    width: 100%;
+    animation: car 5s linear infinite;
+}
+ @keyframes car {
+    from {
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(1000px);
+    }
+} 
+.wheel {
+    left: 50%;
+    bottom: 178px;
+    /* transform: translate(-50%); */
+    position: absolute;
+    z-index: 2;
+}
+.wheel img {
+    width: 66px;
+    height: 66px;
+    animation: wheel 5s linear infinite ;
+}
+.back-wheel {
+    left: 180px;
+    position: absolute;
+    margin: 104px;
+}
+.front-wheel {
+    left: -67px;
+    position: absolute;
+    margin: 104px;
+}
+@keyframes wheel {
+     0% {
+        transform: translate(-1000px) rotate(-0deg);
+    }
+    100% {
+        transform: translate(1000px) rotate(360deg);
+    }
+}
+/* The replacement car */
+.car2 {
+    width: 400px;
+    left: 80%;
+    bottom: 25px;
+    position: absolute;
+    z-index: 2;
+}
+.car2 img {
+    width: 100%;
+    margin-left: 420px;
+    margin-top: 2000px;
+    /* margin-bottom: 96px; */
+    animation: car2img 3s linear infinite;
+}
+   @keyframes car2img {
+    100% {
+        transform: translateX(-2000px);
+    }
+}   
+.wheel2 {
+    left: 130%;
+    bottom: 198px;
+    position: absolute;
+    z-index: 2;
+}
+.wheel2 img {
+    width: 74px;
+    height: 74px;
+    animation: wheel2 3s linear infinite;
+}
+.back-wheel2 {
+    left: -80px;
+    position: absolute;
+    margin-top: -20px;
+}
+.front-wheel2 {
+    left: -266px;
+    position: absolute;
+    margin-top: -20px;
+}
+  @keyframes wheel2 {
+    100% {
+       transform: translate(-2000px) rotate(-360deg);
+   }
+}
+.car3 {
+    width: 400px;
+    left: 20%;
+    bottom: 40px;
+    position: absolute;
+}
+.hell {
+   margin: auto;
+   position: absolute;
+   z-index: 2;
+   left: 50%;
+   animation: aeroplane 6s linear infinite;
+   margin-top: -130px;
+}
+@keyframes hell {
+   from {
+       transform: translateX(1100px);
+   }
+   to {
+       transform: translateX(-1200px);
+   }
+}
+.birds{
+    margin-top: -25%;
+    z-index: 2;
+    animation: birds 6s linear infinite ;
+    animation-direction: normal;
+}
+@keyframes birds {
+    from{
+        transform: translate(900px, 0px);
+    }
+    to{
+        transform: translate(-900px, 0px);
+    }
+}
